@@ -53,7 +53,8 @@ export const rootAgent = new LlmAgent({
         provided by the tool to the user. And after that ask user what type of food they prefer?
 
         Forward all the information to 'diet_agent' agent tool and present the information provided by tool
-        to the user.
+        to the user combining result from 'places_of_interest' & plan my itinerary for each day with the information provided 
+        with lunch & dinner and visiting places of interest for each day.
     `,
     tools: [
         new AgentTool({
